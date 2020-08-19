@@ -15,6 +15,8 @@ REQUIRED_CONFIG_KEYS = [
 def main():
     args = utils.parse_args(REQUIRED_CONFIG_KEYS)
 
+    Airtable.load_config(args.config)
+
     if args.discover:
         Airtable.run_discovery(args)
     elif args.properties:

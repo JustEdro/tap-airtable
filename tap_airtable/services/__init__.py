@@ -6,11 +6,15 @@ from singer.catalog import Catalog, CatalogEntry
 
 
 class Airtable(object):
-    with open('./config.json', 'r') as f:
-        config = json.load(f)
-        metadata_url = config["metadata_url"]
-        records_url = config["records_url"]
-        token = config["token"]
+    metadata_url = None
+    records_url = None
+    token = None
+
+    @classmethod
+    def load_config(cls, config):
+        cls.metadata_url = config["metadata_url"]
+        cls.records_url = config["records_url"]
+        cls.token = config["token"]
 
     @classmethod
     def run_discovery(cls, args):
