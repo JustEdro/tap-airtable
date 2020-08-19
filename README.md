@@ -2,14 +2,14 @@
 
 # Tap Airtable
 
-[Singer](https://www.singer.io/) tap that extracts data from a [MySQL](https://www.mysql.com/) database and produces JSON-formatted data following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/docs/SPEC.md).
+[Singer](https://www.singer.io/) tap that extracts data from an [Airtable](https://airtable.com/) database and produces JSON-formatted data following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/docs/SPEC.md).
 
 To make this Tap work with a Target, clone both projects and follow this instructions:
 
 ## Usage
 
-This section dives into basic usage of `tap-mysql` by walking through extracting
-data from a table. It assumes that you can connect to and read from a MySQL
+This section dives into basic usage of `tap-airtable` by walking through extracting
+data from a table. It assumes that you can connect to and read from an Airtable
 database.
 
 ### Install
